@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+  <meta charset="UTF-8">
+  <title>English Spell Checker</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    .link1 {
+      background: rgb(250, 156, 156);
+    }
+
+    .link2 {
+      background: rgb(200, 248, 155)
+    }
+
+    .link3 {
+      background: rgb(246, 184, 153)
+    }
+
+    .btn-gradient2:hover {
+      border: 1px solid white;
+      transform: translateY(-1px);
+      box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2);
+      color: #fff;
+      text-shadow:
+        0 0 6px rgba(255, 255, 255, 0.9),
+        0 0 12px rgba(255, 255, 255, 0.7),
+        0 0 20px rgba(255, 255, 255, 0.5);
+    }
+
+    .btn-wrap {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .btn-wrap>div {
+      flex: 1;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="overlay"></div>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container justify-content-center position-relative">
+      <a class="navbar-brand fw-bold rainbow-jump mx-auto" href="index.html">
+        English for middle school
+      </a>
+    </div>
+  </nav>
+
+
+
+  <!-- ===== CONTENT ===== -->
+  <main class="container mt-5 pt-5">
+    <div class="row justify-content-center">
+      <div class="col-lg-9">
+
+        <div class="btn-wrap">
+
+          <div class="col-12 col-md-4">
+            <a href="grammarCheck.html" class="btn btn-gradient2 w-100 btn-lg link1">
+              Grammar Check
+            </a>
+          </div>
+
+          <div class="col-12 col-md-4">
+            <a href="excerciseVideo.html" class="btn btn-gradient2 w-100 btn-lg link2">
+              Excercises with Video
+            </a>
+          </div>
+
+          <div class="col-12 col-md-4">
+            <a href="practice.html" class="btn btn-gradient2 w-100 btn-lg link3">
+              Practice
+            </a>
+          </div>
+          <p>English for Middle School là website hỗ trợ học sinh THCS học và luyện tiếng Anh hiệu quả.
+Trang web cung cấp các bài tập ngữ pháp, điền từ, trắc nghiệm và học qua video sinh động.
+Hệ thống chấm điểm tự động, phát hiện lỗi sai và gợi ý đáp án giúp học sinh tiến bộ nhanh hơn.
+Giao diện thân thiện, dễ sử dụng, học mọi lúc – mọi nơi.</p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+
+
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="checktext.js"></script>
+</body>
+
+</html>

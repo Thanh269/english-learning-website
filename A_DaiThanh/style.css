@@ -1,0 +1,141 @@
+body {
+  min-height: 100vh;
+  background: linear-gradient(90deg, #70ddfe, #fcaac4);
+  font-family: "Segoe UI", sans-serif;
+}
+
+
+/* ===== CARD ===== */
+.content-card {
+  backdrop-filter: blur(12px);
+  background: rgba(255, 255, 255, 0.92);
+  border-radius: 16px;
+  border: none;
+}
+
+.card-body {
+  padding: 30px;
+}
+
+h3 {
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+/* ===== TEXTAREA ===== */
+textarea {
+  font-size: 16px;
+  border-radius: 12px;
+  resize: none;
+  border: 1px solid #dee2e6;
+}
+
+textarea:focus {
+  box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+}
+
+/* ===== BUTTON ===== */
+#checkBtn {
+  border-radius: 12px;
+  padding: 10px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+/* ===== RESULT ===== */
+#result {
+  margin-top: 20px;
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+/* ===== WRONG WORD ===== */
+.wrong {
+  color: #dc3545;
+  font-weight: 600;
+  font-size: 14px;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.wrong:hover {
+  color: #b02a37;
+}
+
+/* ===== SUGGESTION ===== */
+.suggestion {
+  color: #0d6efd;
+  margin-left: 6px;
+  font-size: 14px;
+  opacity: 0.85;
+}
+
+/* ===== NAVBAR ===== */
+.navbar {
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  background: rgba(0, 0, 0, 0.18) !important;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+}
+
+.navbar-brand {
+  letter-spacing: 1px;
+}
+
+
+/* nhảy nhẹ */
+@keyframes jump {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-4px);
+  }
+}
+
+.rainbow-jump {
+  transition: transform 0.3s ease;
+}
+
+.rainbow-jump:hover {
+  animation: rainbow 1.2s linear infinite;
+  transform: translateY(-6px) scale(1.05);
+}
+
+.baoquat {
+  border: 8px solid transparent;
+  border-radius: 24px;
+  background:
+    linear-gradient(#fff, #fff) padding-box,
+    linear-gradient(135deg, #9ecbff, #f7b2c4) border-box;
+}
+
+
+.btn-gradient {
+  background: linear-gradient(135deg, #9ecbff, #f7b2c4);
+  border: none;
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.1rem;
+  padding: 12px;
+  border-radius: 12px;
+  transition: all 0.25s ease;
+}
+
+.btn-gradient:hover {
+  background: linear-gradient(135deg, #8abcf5, #f39ab5);
+  transform: translateY(-1px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2);
+  color: #fff;
+  text-shadow:
+    0 0 6px rgba(255, 255, 255, 0.9),
+    0 0 12px rgba(255, 255, 255, 0.7),
+    0 0 20px rgba(255, 255, 255, 0.5);
+}
+
+.btn-gradient:active {
+  transform: scale(0.98);
+}
